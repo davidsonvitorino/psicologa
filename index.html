@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <title>Dra. Elizângela - Psicóloga Clínica</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Dra. Elizângela</h1>
+                <p>Psicóloga Clínica</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#agendamento" class="btn-agendar">Agendar consulta</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h2>Cuidando da sua saúde mental</h2>
+                <p>Atendimento psicológico especializado e humanizado, presencial e online</p>
+                <a href="#agendamento" class="btn">Agendar Consulta</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <div class="sobre-img">
+                <img src="foto-psicologa.jpg" alt="Dra.[Nome]">
+            </div>
+            <div class="sobre-text">
+                <h2>Sobre Mim</h2>
+                <p>Sou formada em Psicologia pela [universidade] e especializada em [areas de especialização]. Atuo há [x] anos ajudando pacientes a enfrentarem desafios emocionais e desenvolverem autoconhecimento.</p>
+                <p>Acredito em uma abordagem [mencionar abordagem terapêutica], focada nas necessidades individuais de cada paciente.</p>
+                <div class="qualificacoes">
+                    <h3>Qualificações:</h3>
+                    <ul>
+                        <li><i class="fa-check"></i>CRP: [Número do CRP</li>
+                        <li><i class="fa-check"></i>Especialização em [Especialização]</li>
+                        <li><i class="fa-check"></i>Formação em [Formação adicional]</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <h2>Serviços Oferecidos</h2>
+            <div class="servicos-grid">
+                <div class="servico-card">
+                    <i class="fas fas-user-tie"></i>
+                    <h3>Terapia Individual</h3>
+                    <p>Atendimento personalizado para adultos, abordando questões como ansiedade, depressão,relacionamento e desenvolvimento pessoal</p>
+                </div>
+                <div class="servico-card">
+                    <i class="fas fa-video"></i>
+                    <h3>Consultas Online</h3>
+                    <p>Sessões de terapia realizadapor videoconferência, com a mesma qualidade e sigilo do atendimento presencial.</p>
+                </div>
+                <div class="servico-card">
+                    <i class="fas fas-heart"></i>
+                    <h3>Terapia de Casal</h3>
+                    <p>Auxílio proficional para casais que desejam melhorar sua comunicação e resolver conflitos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="agendamento" class="agendamento">
+        <div class="container">
+            <h2>Agende sua Consulta</h2>
+            <div class="agendamento-container">
+                <div class="agendamento-info">
+                    <h3>Horários de Atendimento</h3>
+                    <p>Segunda a Sexta: 8h às 18h</p>
+                    <p>Sábado: 8h às 12h</p>
+                    <div class="contato-rapido">
+                        <h3>Contato Rápido</h3>
+                        <p><i class="fas fas-phone"></i>(xx) xxxxx-xxxx</p>
+                        <p><i class="fas fas-envelope"></i>email@psicologa.com.br</p>
+                    </div>
+                </div>
+                <form id="form-agendamento" class="agendamento-form">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" name="telefone" id="telefone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="data">Data Preferencial</label>
+                        <input type="date" id="data" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="horario">Horário Preferencial</label>
+                        <input type="time" id="horario" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tipo">Tipo de Consulta</label>
+                        <select id="tipo" required>
+                            <option value="">Selecione</option>
+                            <option value="online">Online</option>
+                            <option value="presencial">Presencial</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn">Enviar Agendamento</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <div class="contato-container">
+                <div class="contato-info">
+                    <h3>Informações de Contato</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> [Endereço do consultório, se houver]</p>
+                    <p><i class="fas fa-phone"></i> (XX) XXXXX-XXXX</p>
+                    <p><i class="fas fa-envelope"></i> email@psicologa.com</p>
+                    <div class="redes-sociais">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <form id="form-contato" class="contato-form">
+                    <div class="form-group">
+                        <label for="contato-nome">Nome</label>
+                        <input type="text" id="contato-nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contato-email">E-mail</label>
+                        <input type="email" id="contato-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contato-telefone">Telefone</label>
+                        <input type="tel" id="contato-telefone">
+                    </div>
+                    <div class="form-group">
+                        <label for="contato-mensagem">Mensagem</label>
+                        <textarea id="contato-mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Dra. [Nome]</h3>
+                    <p>Psicóloga Clínica</p>
+                    <p>CRP: [Número do CRP</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#sobre"></a>Sobre</li>
+                        <li><a href="#servicos"></a>Serviços</li>
+                        <li><a href="#contato"></a>Contato</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contato</h3>
+                    <p><i class="fas fas-phone"></i>(xx) xxxxx-xxxx</p>
+                    <p><i class="fas fas-envolope"></i>email@psicologa.com.br</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dra. [Nome]. Todos os direitos reservados.</p>
+                <p>Desenvolvido com <i class="fas fas-heart"></i> por Davidson Alves Vitorino</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="modal-agendamento" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Agendamento Confirmado</h2>
+            <p>Obrigado por agendar sua consulta. Entraremos em contato em breve para confirma os detalhes.</p>
+            <button class="btn" id="fechar-modal">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
